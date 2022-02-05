@@ -4,10 +4,13 @@ class Match {
   String location;
   String time;
   String activity;
-  double matchScore;
+  late double matchScore;
+  late bool accepted;
 
-  Match(this.user1, this.user2, this.location, this.time, this.activity,
-      this.matchScore);
+  Match(this.user1, this.user2, this.location, this.time, this.activity) {
+    matchScore = 0;
+    accepted = false;
+  }
 
   User getUser1() => user1;
 
