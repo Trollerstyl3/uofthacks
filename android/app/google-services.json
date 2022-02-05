@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "31329814502",
+    "project_id": "uofthacks-db871",
+    "storage_bucket": "uofthacks-db871.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31329814502:android:8d879d9b74b1b199503827",
+        "android_client_info": {
+          "package_name": "com.uofthacks.handy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "31329814502-odnukgetr2g7vai3i09eq00t4t22mlou.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uofthacks.handy",
+            "certificate_hash": "d7d83226495931c1aba56aa76505753ccb27c72f"
+          }
+        },
+        {
+          "client_id": "31329814502-66u3fc6kt2qd1dfm6991hqjn6m3gf71n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSnYqD34arnq_uJ8JuhxSZbzEotX3HcOE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "31329814502-66u3fc6kt2qd1dfm6991hqjn6m3gf71n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

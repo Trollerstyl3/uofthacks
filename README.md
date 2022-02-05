@@ -1,6 +1,6 @@
-# uofthacks
+# UofTHacks Project
 
-A new Flutter project.
+The new UoftHacks project.
 
 ## Getting Started
 
