@@ -9,7 +9,7 @@ class User {
   late List _potentialMatches = []; // prio queue need to do
   late List _acceptedMatches = [];
 
-  Users(String name, int age, Set<String> activities, String time,
+  User(String name, int age, Set<String> activities, String time,
       String preferredGender, Map contact) {
     _name = name;
     _age = age;
