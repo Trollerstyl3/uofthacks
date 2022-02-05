@@ -1,31 +1,34 @@
 import 'User.dart';
 class Match {
-  User user1;
-  User user2;
-  String location;
-  String time;
-  String activity;
-  late double matchScore;
-  late bool accepted;
+  final User _user1;
+  final User _user2;
+  final String _location;
+  final String _time;
+  final String _activity;
+  late double _matchScore;
+  late bool _accepted;
 
-  Match(this.user1, this.user2, this.location, this.time, this.activity) {
-    matchScore = 0;
-    accepted = false;
+  Match(this._user1, this._user2, this._location, this._time, this._activity) {
+    _matchScore = 0;
+    _accepted = false;
   }
-
-  User getUser1() => user1;
-
-  User getUser2() => user2;
 
   List<User> getUsers() {
     List<User> users = [user1, user2];
     return users;
   }
 
-  String getLocation() => location;
+  String get location => _location;
 
-  String getActivity() => activity;
+  bool get accepted => _accepted;
 
-  double getMatchScore() => matchScore;
+  double get matchScore => _matchScore;
 
+  String get activity => _activity;
+
+  String get time => _time;
+
+  User get user2 => _user2;
+
+  User get user1 => _user1;
 }
