@@ -1,3 +1,4 @@
+import 'User.dart';
 class Match {
   User user1;
   User user2;
