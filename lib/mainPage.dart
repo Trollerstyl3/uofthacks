@@ -7,6 +7,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:uofthacks/login.dart';
 import 'package:get/get.dart';
 
+
 class Login extends StatelessWidget {
   final controller = Get.put(AuthController());
   @override
@@ -51,13 +52,13 @@ class Login extends StatelessWidget {
       return Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          // Container( //Need to do
-          //   color: Colors.grey,
-          //   child: new Image.asset('assets/images/logo.png', height: 40, width: 50,),
-          //   alignment: Alignment.center,
-          // ),
+          Stack( 
+            children: [new Image.asset('assets/images/logo.png', height: 200, width: 800,),]
+            ,
+            alignment: Alignment.center,
+          ),
           Text("SWOLEMATE",
-          style: TextStyle(fontSize: 40)),
+          style: TextStyle(fontSize: 40,fontWeight: FontWeight.w400)),
           SizedBox(height: 15,),
           FloatingActionButton.extended(
             onPressed: () {
