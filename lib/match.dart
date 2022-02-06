@@ -4,7 +4,7 @@ class Match {
   final User _user2;
   final String _location;
   final String _time;
-  final String _activity;
+  final Set<String> _activity;
   late double _matchScore;
   late bool _accepted;
 
@@ -24,11 +24,15 @@ class Match {
 
   double get matchScore => _matchScore;
 
-  String get activity => _activity;
+  Set<String> get activity => _activity;
 
   String get time => _time;
 
   User get user2 => _user2;
 
   User get user1 => _user1;
+
+  set matchScore(double value) {
+    _matchScore = value;
+  }
 }
