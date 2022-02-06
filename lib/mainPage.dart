@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/rendering.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:uofthacks/login.dart';
@@ -11,7 +12,10 @@ class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('SwoleMate')),
+      appBar: AppBar(
+      foregroundColor: const Color(0xFFA63821),
+      backgroundColor: const Color(0xFFFFFFFF),
+      elevation: 0,),
       body: Center(
         child: Obx(() {
           if (controller.googleAccount.value == null) {
@@ -28,7 +32,9 @@ class Login extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text("Coming Soon!"),
+        Text("Coming Soon!",
+        style: TextStyle(fontSize: 25)),
+        SizedBox(height: 15,),
         ActionChip(
             label: Text("Logout"),
             onPressed: () {
@@ -41,12 +47,27 @@ class Login extends StatelessWidget {
     );
   }
 
-  FloatingActionButton buildLogin() {
-    return FloatingActionButton.extended(
-      onPressed: () {
-        controller.login();
-      },
-      label: Text("Google Sign In"),
-    );
-  }
+  Column buildLogin() {
+      return Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          // Container( //Need to do
+          //   color: Colors.grey,
+          //   child: new Image.asset('assets/images/logo.png', height: 40, width: 50,),
+          //   alignment: Alignment.center,
+          // ),
+          Text("SWOLEMATE",
+          style: TextStyle(fontSize: 40)),
+          SizedBox(height: 15,),
+          FloatingActionButton.extended(
+            onPressed: () {
+              controller.login();
+            },
+            label: Text("Google Sign In"),
+            backgroundColor: const Color(0xFFA63821),
+            foregroundColor: const Color(0xFFFFF8E5),
+          )
+        ],
+      );
+    }
 }
